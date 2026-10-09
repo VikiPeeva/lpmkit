@@ -1,0 +1,17 @@
+[package]
+name = "lpmkit"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.88"
+description = "Local process models: discovery, occurrence alignments, and fingerprints"
+
+[dependencies]
+# rust4pm: event logs, Petri nets, PNML/XES IO
+process_mining = { version = "0.6", default-features = false }
+zip = { version = "6", default-features = false, features = ["deflate"] }
+thiserror = "2"
+uuid = "1"
+
+[dev-dependencies]
+tempfile = "3"
+zip = { version = "6", default-features = false, features = ["deflate"] }
