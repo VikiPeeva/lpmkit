@@ -5,10 +5,6 @@
 # Cargo.lock is committed: current Cargo guidance is to commit it for libraries too.
 
 # RustRover / JetBrains
-# Shared project settings in .idea/ (modules.xml, *.iml, code style, run
-# configurations) are committed; per-user and machine-specific files are not.
-# .idea/.gitignore covers the IDE's own defaults; these duplicate and extend it
-# so they stay ignored even if that file is regenerated.
 .idea/
 *.iws
 out/
