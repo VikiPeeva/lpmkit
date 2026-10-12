@@ -5,8 +5,9 @@ Built on [rust4pm](https://crates.io/crates/process_mining) for event logs and P
 
 ## Status
 
-Early skeleton. The crate compiles but has no functionality yet: the module
-structure is in place and the modules are empty.
+Early skeleton. The only functionality so far is reading local process models
+from a zip archive of PNML files (`core::io::read_lpm_zip`).
+
 
 ## Layout
 
@@ -15,7 +16,8 @@ src/
   lib.rs        crate root
   core/
     mod.rs      core module
-    io.rs       reading models and logs from disk (empty)
+    lpm.rs      Lpm: a Petri net and its name
+    io.rs       read_lpm_zip: one Lpm per *.pnml in a zip archive
 ```
 
 ## Dependencies
